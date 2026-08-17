@@ -1,0 +1,4 @@
+FontFace="MS Sans Serif,8,0"
+popid_1684726952X="Honda  CBR 110\n\r\n\rOriginal transponder\n\rPCF7936\n\rAllowed transponder\n\rPCF7936\n\rData location\n\r93C56 or 93C66\n\rNo. of  keys\n\r2\n\rMethods\n\rKeymaker\n\r\n\r[PICTURE cbr110.bmp]"
+popid_1437548276X="Honda  CBR 975\n\r\n\rOriginal transponder\n\rPCF7936\n\rAllowed transponder\n\rPCF7936\n\rData location\n\r93C46 (L46R)\n\rNo. of  keys\n\r2\n\rMethods\n\rKeymaker\n\r\n\r\n\r[PICTURE cbr975.bmp]"
+popid_518248097X="Opel  IMMO-2\n\r\n\rAgila\n\rAstra G\n\rCombo C\n\rCorsa C\n\rMeriva\n\rOmega 2000-\n\rSintra 2000-\n\rTigra\n\rVecra B 2000-\n\rZafira\n\r\n\rOriginal transponder\n\rPCF7935 (ID40)\n\rAllowed transponder\n\rPCF7935\n\rData location\n\rTMS370C002\n\rNo. of  keys\n\r5\n\r\n\r\n\rSee removing Astra, Tigra, Vectra\n\rSee removing Zafira\n\r\n\r\n\r[PICTURE optms.bmp]"

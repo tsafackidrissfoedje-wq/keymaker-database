@@ -1,0 +1,29 @@
+.topic 1103
+Opel  IMMO-2
+
+Agila
+Astra G
+Combo C
+Corsa C
+Meriva
+Omega 2000-
+Sintra 2000-
+Tigra
+Vecra B 2000-
+Zafira
+
+Original transponder
+PCF7935 (ID40)
+Allowed transponder
+PCF7935
+Data location
+TMS370C002
+No. of  keys
+5
+
+
+See removing Astra, Tigra, Vectra
+See removing Zafira
+
+
+[PICTURE optms.bmp]

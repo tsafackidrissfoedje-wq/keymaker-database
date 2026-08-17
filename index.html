@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>KeyMaker Pro - Base de Données Véhicules & Schémas</title>
+  <meta name="description" content="Base de données interactive pour la programmation de clés automobiles, transpondeurs, pinouts et calculateurs issue de maker.chm.">
+  <meta name="theme-color" content="#0a0f1d">
+  <link rel="stylesheet" href="viewer.css">
+</head>
+<body>
+
+  <!-- App Header -->
+  <header class="app-header">
+    <div class="brand-section" id="btn-home" title="Retour à l'accueil (Key Maker interface)">
+      <div class="brand-logo">🔑</div>
+      <div class="brand-titles">
+        <span class="brand-name">KeyMaker Pro</span>
+        <span class="brand-badge">Base 610 Véhicules & Schémas</span>
+      </div>
+    </div>
+
+    <!-- Live Fast Search Box -->
+    <div class="search-box">
+      <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+      <input type="text" id="search-input" class="search-input" placeholder="Rechercher : Golf, 93C66, ID48, CAS3, EDC17, Audi..." autocomplete="off">
+      <button id="search-clear" class="search-clear" title="Effacer la recherche">✕</button>
+    </div>
+
+    <!-- Header Actions -->
+    <div class="header-actions">
+      <button class="btn-icon" id="theme-toggle" title="Changer le thème">🌙</button>
+      <button class="btn-icon mobile-menu-btn" id="menu-toggle" title="Menu Navigation">☰</button>
+    </div>
+  </header>
+
+  <!-- Main Layout Wrapper -->
+  <div class="main-wrapper">
+
+    <!-- Left Navigation Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <span class="sidebar-title">Catalogue Constructeurs</span>
+        <div class="sidebar-tools">
+          <button class="sidebar-btn" id="btn-expand-all" title="Tout Déplier">Déplier</button>
+          <button class="sidebar-btn" id="btn-collapse-all" title="Tout Replier">Replier</button>
+        </div>
+      </div>
+
+      <!-- Live Tree Structure from maker.hhc -->
+      <div class="tree-container" id="tree-container">
+        <!-- Rendered dynamically by viewer.js from KEYMAKER_TREE -->
+      </div>
+
+      <!-- Search Results Container -->
+      <div class="search-results-container" id="search-results">
+        <!-- Filtered results appear here -->
+      </div>
+    </aside>
+
+    <!-- Right Main Content Viewer -->
+    <main class="content-area">
+      <!-- Breadcrumb Bar -->
+      <div class="content-topbar">
+        <div class="breadcrumbs">
+          <span class="breadcrumb-item" id="bc-cat">Accueil</span>
+          <span>›</span>
+          <span class="breadcrumb-item" id="bc-brand" style="display:none;"></span>
+          <span id="bc-brand-sep" style="display:none;">›</span>
+          <span class="breadcrumb-item active" id="bc-page">Key Maker interface</span>
+        </div>
+
+        <div class="content-actions">
+          <a class="content-action-btn" id="direct-link" href="second_topic.htm" target="_blank" title="Ouvrir le fichier brut dans un nouvel onglet">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            Plein Écran
+          </a>
+        </div>
+      </div>
+
+      <!-- Seamless Iframe Viewer -->
+      <div class="iframe-container">
+        <iframe id="page-iframe" class="page-iframe" src="second_topic.htm" title="Fiche Véhicule"></iframe>
+      </div>
+    </main>
+  </div>
+
+  <!-- HD Image Lightbox Modal with Zoom & Rotation -->
+  <div class="lightbox-modal" id="image-lightbox" onclick="if(event.target === this) window.KeyMaker.closeLightbox()">
+    <div class="lightbox-header">
+      <span class="lightbox-title" id="lightbox-title">Schéma Électronique HD</span>
+      <div class="lightbox-controls">
+        <button class="lb-btn" onclick="window.KeyMaker.zoomImage(1.2)" title="Zoom Avant (Zoom +)">🔍 +</button>
+        <button class="lb-btn" onclick="window.KeyMaker.zoomImage(0.8)" title="Zoom Arrière (Zoom -)">🔍 -</button>
+        <button class="lb-btn" onclick="window.KeyMaker.rotateImage()" title="Rotation 90°">🔄 90°</button>
+        <button class="lb-btn" onclick="window.KeyMaker.resetZoom()" title="Taille Réelle">1:1</button>
+        <button class="lb-btn close" onclick="window.KeyMaker.closeLightbox()" title="Fermer (Échap)">✕</button>
+      </div>
+    </div>
+    <div class="lightbox-body" onclick="window.KeyMaker.zoomImage(1.2)">
+      <img class="lightbox-img" id="lightbox-img" src="" alt="Schéma Agrandit">
+    </div>
+  </div>
+
+  <!-- Load Structured HHC Tree and Viewer Controller -->
+  <script src="tree_data.js"></script>
+  <script src="viewer.js"></script>
+</body>
+</html>

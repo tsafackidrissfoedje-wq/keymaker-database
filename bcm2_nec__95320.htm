@@ -1,0 +1,148 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+   <title>BCM2  Dump Maker</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#649CCC">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">BCM2 &nbsp;Dump Maker</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="second_topic.htm">Top</a>&nbsp;
+     <a href="g3.htm">Previous</a>&nbsp;
+     <a href="bsi_delphi_93c86.htm">Next</a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p><span style="font-size: 16pt; font-family: 'Times New Roman'; font-weight: bold; color: #000080;">BCM2 (Dump Maker)</span></p>
+<p><span style="font-size: 16pt; font-family: 'Times New Roman'; font-weight: bold; color: #000080;">&nbsp;</span></p>
+<p><span style="font-size: 14pt; font-family: 'Times New Roman'; font-weight: bold; color: #0000ff;">Ver.1</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table width="75%" cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="192" style="width:192px;"><p><span style="font-size: 12pt; font-family: 'Times New Roman';">Data Location</span></p>
+</td>
+<td valign="top" width="723" style="width:723px;"><p><span style="font-size: 12pt; font-family: 'Times New Roman';">MCU NEC + EEPROM 95320</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="192" style="width:192px;"><p><span style="font-size: 12pt; font-family: 'Times New Roman';">EEPROM Size</span></p>
+</td>
+<td valign="top" width="723" style="width:723px;"><p><span style="font-size: 12pt; font-family: 'Times New Roman';">4kB</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="192" style="width:192px;"><p><span style="font-size: 12pt; font-family: 'Times New Roman';">FLASH Size (NEC)</span></p>
+</td>
+<td valign="top" width="723" style="width:723px;"><p><span style="font-size: 12pt; font-family: 'Times New Roman';">max 2MB</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p><span style="font-size: 14pt; font-family: 'Times New Roman'; font-weight: bold; color: #0000ff;">Ver.2</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table width="75%" cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="192" style="width:192px;"><p><span style="font-size: 12pt; font-family: 'Times New Roman';">Data Location</span></p>
+</td>
+<td valign="top" width="723" style="width:723px;"><p><span style="font-size: 12pt; font-family: 'Times New Roman';">MCU NEC</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="192" style="width:192px;"><p><span style="font-size: 12pt; font-family: 'Times New Roman';">EEPROM Size (NEC)</span></p>
+</td>
+<td valign="top" width="723" style="width:723px;"><p><span style="font-size: 12pt; font-family: 'Times New Roman';">64kB</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="192" style="width:192px;"><p><span style="font-size: 12pt; font-family: 'Times New Roman';">FLASH Size (NEC)</span></p>
+</td>
+<td valign="top" width="723" style="width:723px;"><p><span style="font-size: 12pt; font-family: 'Times New Roman';">max 2MB</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p><span style="font-size: 16pt; font-family: 'Times New Roman'; font-weight: bold; color: #000080;">&nbsp;</span></p>
+<p><span style="font-size: 12pt; font-family: 'Times New Roman';">The BCM2 unit contains some security data that is necessary in cases of unit replacement or modifying.</span></p>
+<p><span style="font-size: 12pt; font-family: 'Times New Roman';">Depending on the unit generation, the data is encrypted and stored in the eeprom 95320 or in the NEC's data flash. </span></p>
+<p><span style="font-size: 12pt; font-family: 'Times New Roman';">To decrypt data it is necessary to read the 95320 + NEC Flash or NEC DataFlash + NEC ProgramFlash.</span></p>
+<p><span style="font-size: 12pt; font-family: 'Times New Roman';">&nbsp;</span></p>
+<p><span style="font-size: 14pt; font-family: 'Times New Roman'; font-weight: bold; color: #0000ff;">Features</span></p>
+<p><span style="font-size: 12pt; font-family: 'Times New Roman'; font-weight: bold;">Basic</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr valign="baseline"><td width="13"><span style="font-size: 12pt; font-family: 'Symbol'; font-style: normal; color: #000000; text-decoration: none;">&#183;</span></td><td><span style="font-size: 12pt; font-family: 'Times New Roman';">Dump decoding</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr valign="baseline"><td width="13"><span style="font-size: 12pt; font-family: 'Symbol'; font-style: normal; color: #000000; text-decoration: none;">&#183;</span></td><td><span style="font-size: 12pt; font-family: 'Times New Roman';">CRC calculation</span></td></tr></table></div><p><span style="font-size: 12pt; font-family: 'Times New Roman'; font-weight: bold;">&nbsp;</span></p>
+<p><span style="font-size: 12pt; font-family: 'Times New Roman'; font-weight: bold;">Editing</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr valign="baseline"><td width="13"><span style="font-size: 12pt; font-family: 'Symbol'; font-style: normal; color: #000000; text-decoration: none;">&#183;</span></td><td><span style="font-size: 12pt; font-family: 'Times New Roman';">VIN</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr valign="baseline"><td width="13"><span style="font-size: 12pt; font-family: 'Symbol'; font-style: normal; color: #000000; text-decoration: none;">&#183;</span></td><td><span style="font-size: 12pt; font-family: 'Times New Roman';">Component Protection</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr valign="baseline"><td width="13"><span style="font-size: 12pt; font-family: 'Symbol'; font-style: normal; color: #000000; text-decoration: none;">&#183;</span></td><td><span style="font-size: 12pt; font-family: 'Times New Roman';">PowerClass</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr valign="baseline"><td width="13"><span style="font-size: 12pt; font-family: 'Symbol'; font-style: normal; color: #000000; text-decoration: none;">&#183;</span></td><td><span style="font-size: 12pt; font-family: 'Times New Roman';">MAC</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr valign="baseline"><td width="13"><span style="font-size: 12pt; font-family: 'Symbol'; font-style: normal; color: #000000; text-decoration: none;">&#183;</span></td><td><span style="font-size: 12pt; font-family: 'Times New Roman';">ECU Loagin</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr valign="baseline"><td width="13"><span style="font-size: 12pt; font-family: 'Symbol'; font-style: normal; color: #000000; text-decoration: none;">&#183;</span></td><td><span style="font-size: 12pt; font-family: 'Times New Roman';">Configuration</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr valign="baseline"><td width="13"><span style="font-size: 12pt; font-family: 'Symbol'; font-style: normal; color: #000000; text-decoration: none;">&#183;</span></td><td><span style="font-size: 12pt; font-family: 'Times New Roman';">Keys</span></td></tr></table></div><p><span style="font-size: 12pt; font-family: 'Times New Roman';">&nbsp;</span></p>
+<p><span style="font-size: 14pt; font-family: 'Times New Roman'; font-weight: bold; color: #0000ff;">Dump loading</span></p>
+<p><span style="font-size: 12pt; font-family: 'Times New Roman'; font-style: italic; font-weight: bold;">At the earliest models of BCM2 it is not necessary to read the NEC</span><span style="font-size: 12pt; font-family: 'Times New Roman'; font-style: italic;">.</span><span style="font-size: 12pt; font-family: 'Times New Roman';"> The Dump Maker detects this situation when the eeprom</span></p>
+<p><span style="font-size: 12pt; font-family: 'Times New Roman';">dump is being loaded and displays an appropriate message. Therefore if you are doubt is NEC's dump necessary or not, begin</span></p>
+<p><span style="font-size: 12pt; font-family: 'Times New Roman';">your work with the eeprom. If you have got a message that NEC's dump is not necessary, continue without reading of the NEC,</span></p>
+<p><span style="font-size: 12pt; font-family: 'Times New Roman';">if no message displayed, read the NEC and upload its dump.</span></p>
+<p><span style="font-size: 12pt; font-family: 'Times New Roman';">&nbsp;</span></p>
+<p><span style="font-size: 12pt; font-family: 'Times New Roman'; font-style: italic;">To load the </span><span style="font-size: 12pt; font-family: 'Times New Roman'; font-style: italic; font-weight: bold;">eeprom </span><span style="font-size: 12pt; font-family: 'Times New Roman'; font-style: italic;">dump: click </span><span style="font-size: 12pt; font-family: 'Times New Roman'; font-style: italic; font-weight: bold; color: #0000ff;">Load EEPROM</span><span style="font-size: 12pt; font-family: 'Times New Roman'; font-style: italic;"> button.</span></p>
+<p><span style="font-size: 12pt; font-family: 'Times New Roman'; font-style: italic;">To load the </span><span style="font-size: 12pt; font-family: 'Times New Roman'; font-style: italic; font-weight: bold;">NEC</span><span style="font-size: 12pt; font-family: 'Times New Roman'; font-style: italic;"> dump click </span><span style="font-size: 12pt; font-family: 'Times New Roman'; font-style: italic; font-weight: bold; color: #0000ff;">Load FLASH</span><span style="font-size: 12pt; font-family: 'Times New Roman'; font-style: italic;"> buttton</span></p>
+<p><span style="font-size: 12pt; font-family: 'Times New Roman';">&nbsp;</span></p>
+<p><img src="1.png" width="168" height="255" border="0" alt="1"><span style="font-size: 12pt; font-family: 'Times New Roman';"></span></p>
+<p><span style="font-size: 12pt; font-family: 'Times New Roman';">&nbsp;</span></p>
+<p><span style="font-size: 14pt; font-family: 'Times New Roman'; font-weight: bold; color: #0000ff;">Dump decrypting</span></p>
+<p><span style="font-size: 12pt; font-family: 'Times New Roman';">After the dumps have been loaded the next action is to decrypt dump of 95320. </span></p>
+<p><span style="font-size: 12pt; font-family: 'Times New Roman';">&nbsp;</span></p>
+<p><span style="font-size: 12pt; font-family: 'Times New Roman'; font-style: italic;">To decrypt the</span><span style="font-size: 12pt; font-family: 'Times New Roman'; font-style: italic; font-weight: bold;"> </span><span style="font-size: 12pt; font-family: 'Times New Roman'; font-style: italic;">dump: click </span><span style="font-size: 12pt; font-family: 'Times New Roman'; font-style: italic; font-weight: bold; color: #0000ff;">Decode Dump</span><span style="font-size: 12pt; font-family: 'Times New Roman'; font-style: italic;"> button.</span></p>
+<p><span style="font-size: 12pt; font-family: 'Times New Roman'; font-style: italic;">&nbsp;</span></p>
+<p><span style="font-size: 14pt; font-family: 'Times New Roman'; font-weight: bold; color: #0000ff;">Editing of the data</span></p>
+<p><span style="font-size: 12pt; font-family: 'Times New Roman';">After the dump decrypted the clear data is being displayed in the appropriate fields of the window.</span></p>
+<p><span style="font-size: 12pt; font-family: 'Times New Roman';">Near each data there is the </span><span style="font-size: 12pt; font-family: 'Times New Roman'; font-weight: bold;">Edit</span><span style="font-size: 12pt; font-family: 'Times New Roman';"> button. Clicking of the button involves a dialog window with editing tools.</span></p>
+<p><span style="font-size: 12pt; font-family: 'Times New Roman';">&nbsp;</span></p>
+<p><span style="font-size: 12pt; font-family: 'Times New Roman'; font-style: italic;">To edit any data: click the </span><span style="font-size: 12pt; font-family: 'Times New Roman'; font-style: italic; font-weight: bold; color: #0000ff;">Edit</span><span style="font-size: 12pt; font-family: 'Times New Roman'; font-style: italic;"> button.</span></p>
+<p><span style="font-size: 12pt; font-family: 'Times New Roman'; font-style: italic;">To edit a key's data: click the </span><span style="font-size: 12pt; font-family: 'Times New Roman'; font-style: italic; font-weight: bold; color: #0000ff;">Edit</span><span style="font-size: 12pt; font-family: 'Times New Roman'; font-style: italic;"> button, to delete a key's data: click the </span><span style="font-size: 12pt; font-family: 'Times New Roman'; font-style: italic; font-weight: bold; color: #0000ff;">Delete</span><span style="font-size: 12pt; font-family: 'Times New Roman'; font-style: italic;"> button</span></p>
+<p><span style="font-size: 12pt; font-family: 'Times New Roman'; font-style: italic;">&nbsp;</span></p>
+<p><span style="font-size: 14pt; font-family: 'Times New Roman'; font-weight: bold; color: #0000ff;">Saving of the edited data</span></p>
+<p><span style="font-size: 12pt; font-family: 'Times New Roman';">After changes have been done it is necessary to encrypt the dump and save it.</span></p>
+<p><span style="font-size: 12pt; font-family: 'Times New Roman';">.</span></p>
+<p><span style="font-size: 12pt; font-family: 'Times New Roman'; font-style: italic;">To save the new dump: click </span><span style="font-size: 12pt; font-family: 'Times New Roman'; font-style: italic; font-weight: bold; color: #0000ff;">Save Dump As</span><span style="font-size: 12pt; font-family: 'Times New Roman'; font-style: italic;"> button</span><span style="font-size: 12pt; font-family: 'Times New Roman';">.</span></p>
+<p><span style="font-size: 12pt; font-family: 'Times New Roman';">&nbsp;</span></p>
+<p><span style="font-size: 14pt; font-family: 'Times New Roman'; font-weight: bold; color: #0000ff;">Saving of the decrypted data</span></p>
+<p><span style="font-size: 12pt; font-family: 'Times New Roman';">This step is not necessary and allows to save the decrypted data in the text format.</span></p>
+<p><span style="font-size: 12pt; font-family: 'Times New Roman';">&nbsp;</span></p>
+<p><span style="font-size: 12pt; font-family: 'Times New Roman'; font-style: italic;">To save data: click </span><span style="font-size: 12pt; font-family: 'Times New Roman'; font-style: italic; font-weight: bold; color: #0000ff;">Save Data Text</span><span style="font-size: 12pt; font-family: 'Times New Roman'; font-style: italic;"> button</span><span style="font-size: 12pt; font-family: 'Times New Roman';">.</span></p>
+<p><span style="font-size: 12pt; font-family: 'Times New Roman';">&nbsp;</span></p>
+<p><span style="font-size: 14pt; font-family: 'Times New Roman'; font-weight: bold; color: #0000ff;">Make Clone</span></p>
+<p><span style="font-size: 12pt; font-family: 'Times New Roman';">There are two buttons for this action: </span><span style="font-size: 12pt; font-family: 'Times New Roman'; font-style: italic; font-weight: bold; color: #0000ff;">Export Data </span><span style="font-size: 12pt; font-family: 'Times New Roman';"> and </span><span style="font-size: 12pt; font-family: 'Times New Roman'; font-style: italic; font-weight: bold; color: #0000ff;">Import Data</span><span style="font-size: 12pt; font-family: 'Times New Roman';">. After the dump has been decrypted both buttons are available.</span></p>
+<p><span style="font-size: 12pt; font-family: 'Times New Roman';">Exporting of data saves the plain data to the specified folder. If necessary it is possible to make additional changes with a hex-editor.</span></p>
+<p><span style="font-size: 12pt; font-family: 'Times New Roman';">Importing of data loads the plain data. After clicking </span><span style="font-size: 12pt; font-family: 'Times New Roman'; font-style: italic; font-weight: bold; color: #0000ff;">Save Dump As</span><span style="font-size: 12pt; font-family: 'Times New Roman';"> the imported data will be encrypted and loaded to the unit.</span></p>
+<p><span style="font-size: 12pt; font-family: 'Times New Roman';">Thus, this tool makes possible to transfer all data between units.</span></p>
+<p><span style="font-size: 12pt; font-family: 'Times New Roman';">&nbsp;</span></p>
+<p><span style="font-size: 14pt; font-family: 'Times New Roman'; font-weight: bold; color: #333399;">Version NEC + 95320</span></p>
+<p><img src="vag_bcm2.png" width="700" height="600" border="0" alt="vag_bcm2"><span style="font-size: 12pt; font-family: 'Times New Roman';"></span></p>
+<p><span style="font-size: 12pt; font-family: 'Times New Roman';">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table width="75%" cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="340" style="width:340px;"><p><img src="vag_bcm2_s1.png" width="300" height="224" border="0" alt="vag_bcm2_s1"><span style="font-size: 16pt; font-family: 'Times New Roman'; font-weight: bold; color: #000080;"></span></p>
+</td>
+<td valign="top" width="615" style="width:615px;"><br>
+</td>
+</tr>
+</table>
+</div>
+<p><span style="font-size: 12pt; font-family: 'Times New Roman';">&nbsp;</span></p>
+<p><span style="font-size: 12pt; font-family: 'Times New Roman'; font-weight: bold;">&nbsp;</span></p>
+
+</td></tr></table>
+
+</body>
+</html>
